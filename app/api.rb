@@ -9,7 +9,7 @@ module ExpenseTracker
     end
 
     def initialize
-      @ledger = self.class.ledger
+      @ledger = self.class.ledger || Ledger.new
       super()
     end
 
